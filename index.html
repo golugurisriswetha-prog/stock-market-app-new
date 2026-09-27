@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,initial-scale=1.0">
+      <title>AI Trading Analyzer</title>
+      <link rel="stylesheet"
+        href="style.css"
+        <!--TradingView LightWeight Charts-->
+        <Script
+          src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+  </head>
+  <body>
+    <!-- Top Bar-->
+    <header class="topbar">
+      <div class="logo">AI Trading Analyzer</div>
+      <div class="search-box">
+        <input id="stockInput"
+          type="text" placeholder="Search stock...">
+      </div>
+      <button class="ai-button"
+        onclick="aiAnalyze()">
+        AI Analyze
+      </button>
+    </header>
+    <!--Main Layout-->
+    <div class="main=cointainer">
+      <!--Left Sidebar-->
+      <aside class="sidebar">
+        <h3>Watchlist</h3>
+        <div class="stock=item"
+          onclick="loadStock('RELIANCE')">
+          RELIANCE
+          <span>₹2,950</span>
+        </div>
+        <div class="stock-item"
+          onclick="loadStock('TCS')">
+          TCS
+          <span>₹4,100</span>
+        </div>
+        <div class="stock-item"
+          onclick="loadStock('INFY')">
+          INFY
+          <span>₹1,520</span>
+        </div>
+        <div class="stock-item"
+          onclick="loadStock('INFY')">
+          INFY
+          <span>₹1,520</span>
+        </div>
+        <div class="stock=item"
+          onclick="loadStock('BAJFINANCE')">
+          BAJFINANCE
+          <span>₹1,020</span>
+        </div>
+      </aside>
+      <!--Chart Section-->
+      <main class="Chart=section">
+        <div
+          class="stock-header">
+          <div>
+            <h2
+              id="stockName">RELIANCE</h2>
+              <p
+                id="stockPrice">₹2950.00</p>
+          </div>
+          <div
+            class="time=buttons">
+            <button
+              onclick="changeTimeframe('1D')"><1D</button>
+              <button
+                onclick="changeTimeFrame('1W')"><1W</button>
+                <button
+                  onclick="changeTimeFrame('1M')"><1M</button>
+                  <button
+                    onclick="changeTimeFrame('1Y')"><1Y</button>
+          </div>
+        </div>
+        <!--Chart==>
+  <div id="Chart"></div>
+  <!--Trading Buttons-->
+        <div
+          class="trade-panel">
+          <button
+            class="but-button"
+            onclick="paperBuy()">
+            BUY
+            <button
+              <button
+              class="sell=button"
+              onclick="paperSell()">
+              SELL
+            </button>
+          </button>
+          <div>
+            <!--AI Analysis-->
+            <section
+              class="ai-panel">
+              <h2>AI MARKET Analysis</h2>
+              <p id="aiResult">
+                Click "AI Analyze" to analyze the selected stock.
+              </p>
+            </section>
+          </main>
+            <!==Right Panel-->
+            <aside class="right=panel">
+              <h3>Market Information</h3>
+              <div class="info-box">
+                <span>Open</span>
+                <strong
+                  id="openPrice">2,900</strong>
+              </div>
+              <div class="info-box">
+                <span>High</span>
+                <strong
+                  id="highPrice">3,000</strong>strong>
+              </div>
+              <div class="info-box">
+                <span>Low</span>
+                <strong
+                  id="lowPrice">2,850</strong>
+                  <div>
+                    <div class="info-box">
+                      <span>Volume</span>
+                      <strong
+                        id="volume">12.5M</strong>
+                    </div>
+                    <h3>Indicators</h3>
+                    <div class="indicators</h3>
+                      <div class="indicator">
+                      RSI
+                      <strong>58.4</strong>
+                  </div>
+                  <div class="indicators">
+                    MACD
+                    <strong>12.8</strong>
+                  </div>
+                    <h3>Indicators</h3>
+                    <div class="indicator">
+                    EMA 20
+                      <strong>2,910</strong>
+                    </div>
+                  </aside>
+                  </div>
+<script src="script.js"></script>
+              <body>
+              </html>
+              </body>
